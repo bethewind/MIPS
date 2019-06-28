@@ -1,6 +1,5 @@
 <center> <font size=5> <b>32位MIPS多周期CPU实验报告</b></font>
 </center>
-<p align=right> <strong>聂希瑞 16307130133</strong></p>
 
 [TOC]
 
@@ -459,30 +458,3 @@ RAM[63] <= 32'h00000000;
 <center class="image">
 <img src="./assets/recursive.jpg" width=1000px height=400px>
 </center>
-
-#### 四、实验总结
-
-##### **1. 申A理由 (Apply for A)**
-
-（1）本次实验实现了和单周期一样多的指令集（26+）
-
-（2）在多周期实验投入了巨大的时间和精力。无论是**手绘电路图**还是努力**写汇编的递归程序**尝试验证jal和jr的正确性，都花了我很多时间。虽然最终递归程序还是没写成功，但是我还是会再试一下的。
-
-（3）开发板验收的时候，能够展示几乎所有的控制信号、内存读写、执行指令、FSM状态转移等等。
-
-##### 2.反思和收获 （Pain And Gain）
-
-（1）对多周期CPU设计和有限状态机FSM有了更深刻的理解。
-
-（2）无论是手绘电路图还是写递归程序都花了我很多的精力，在这个过程中加深了我对CPU的理解，同时甚至还复习了上学期学过的汇编压栈弹栈的相关知识。只不过汇编实在是太痛苦了。
-
-#### 五、参考文献
-
-[1] David Money Harris, Sarah L.Harris《Digital Design and Computer Architecture》中文版第二版
-
-[2] MIPS32® Architecture For Programmers Volume II: The MIPS32® Instruction Set
-
-[3] 陈辰.8 多周期MIPS处理器.PPT
-
-[4] www.baidu.com
-

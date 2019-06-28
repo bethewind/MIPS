@@ -1,6 +1,5 @@
 <center> <font size=5> <b>32位MIPS单周期CPU实验报告</b></font>
 </center>
-<p align=right> <strong>聂希瑞 16307130133</strong></p>
 
 [TOC]
 #### 一、实验目的
@@ -307,41 +306,20 @@ Control主要由两部分元件组成：
 
 以下为仿真结果：
 <center class="image">
-<img src="C:\\Users\xrnie\Documents\TyporaFiles\assets\sim1.png" width=800px height=400px align=center>
+<img src=".\assets\sim1.png" width=800px height=400px align=center>
 </center>
 <center class="image">
-<img src="C:\\Users\xrnie\Documents\TyporaFiles\assets\sim2.png" width=800px height=400px align=center>
+<img src=".\assets\sim2.png" width=800px height=400px align=center>
 </center>
 <center class="image">
-<img src="C:\\Users\xrnie\Documents\TyporaFiles\assets\sim3.png" width=800px height=400px align=center>
+<img src=".\assets\sim3.png" width=800px height=400px align=center>
 </center>
+
 ###### 4.3 开发板测试 (NEXYS 4 DDR)
 
 上机课的时候助教已经验收过了，后来加的指令经过测试没有任何问题。如有疑惑请及时与本人联系。谢谢！
 
 测试视频链接：https://pan.baidu.com/s/1zIqpsgGTMi7vCNa9RjVDFg 提取码：h5je 
 
-#### 四、实验总结
 
-##### **1. 申A理由 (Apply for A)**
-
-（1）本次实验完成了对单周期CPU的MIPS指令集子集实现。
-（2）在要求的15条指令之外，还**实现了额外的位移、跳转指令，总共实现了26条指令**，详细内容见本报告的第三	  部分Instruction Set。
-（3）得益于jr和jal指令的实现，这个CPU能够完成**调用递归函数**的功能。
-（3）在上这门课之前，我没接触过Verilog和开发板测试，能够完成要求并且实现额外的指令已经尽了自己最大努	  力。
-
-##### 2. 反思和收获 (Pain And Gain)
-
-（1）最大的收获是对单周期CPU的设计思路和数据通路的知识掌握有了长足的进步。
-（2）需要反思的是在设计指令数据通路的时候并没有考虑门之间的延时可能引发的冒险冲突等问题，这部分问题	  可能会在第三阶段流水线CPU设计得到集中暴露，也相信自己有能力解决：）
-
-#### 五、参考文献
-
-[1] David Money Harris, Sarah L.Harris《Digital Design and Computer Architecture》中文版第二版
-
-[2] MIPS32® Architecture For Programmers Volume II: The MIPS32® Instruction Set
-
-[3] 陈辰 《1 MIPS微处理器原理-体系结构(MIPS汇编语言)》PPT
-
-[4] www.baidu.com
 

@@ -1,6 +1,5 @@
 <center> <font size=5> <b>32位MIPS流水线CPU实验报告</b></font>
 </center>
-<p align=right> <strong>聂希瑞 16307130133</strong></p>
 
 [TOC]
 
@@ -405,33 +404,3 @@ ROM[34] <= 32'h00000000;//nop
     <img src="./assets/regresult1.jpg" width=1000px height=400px>
           <p>register result</p>
     </center>
-
-#### 四、反思总结
-
-##### **1. 申A理由 (Apply for A)**
-
-（1）本次实验实现了和单周期一样多的**指令集（26+）**
-
-（2）**实验报告详尽**地解释了流水线冲突的解决办法，并且因为在原有指令集要求的基础上添加了jal/jr两条指令，对转发/阻塞/刷新有了更进一步的应用和更为深刻的理解。
-
-（3）尽管早就添加了jal和jr两条指令，但是终于把**调用函数**的代码写了一个出来！！！递归调用估计是可以操作的，奈何本人手动写汇编代码实在是一言难尽orz...不过不管怎么样，调用函数的功能完成了。
-
-##### 2.反思和收获 （Pain And Gain）
-
-（1）最开始遇见的困难是信号传递到哪个阶段比较迷，后来整体写完之后，把图画出来了，然后Debug就更容易一些。
-
-（2）第二个debug非常困难的时期是j-type和beq/bne类型的指令，涉及的转发/阻塞和刷新需要理解比较深刻，得益于助教的帮助才意识到自己有个错误。
-
-（3）收获在于写代码、画图，然后对流水线机制的理解更为深刻。
-
-（4）特别鸣谢张作柏指出的刷新InstrF到InstrD的指令的触发器中，为了保证刷新的时候必须是不暂停的，添加了一行~StallD & flushD 替代flushD。这应该是教材的一个小bug。
-
-#### 五、参考文献
-
-[1] David Money Harris, Sarah L.Harris《Digital Design and Computer Architecture》中文版第二版
-
-[2] MIPS32® Architecture For Programmers Volume II: The MIPS32® Instruction Set
-
-[3] 陈辰.9 MIPS32流水线处理器 PPT
-
-[4] www.baidu.com
